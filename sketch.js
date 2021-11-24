@@ -43,6 +43,13 @@ function setup() {
 
 function draw() {
   background(255);
+
+push()
+textAlign(LEFT);
+textSize(50)
+text("Want another idea? Click anywhere", 100,200)
+pop()
+
   starterRand = random(starter);
   discussRand = random(discuss);
   rand_bg();

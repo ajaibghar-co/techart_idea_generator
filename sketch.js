@@ -44,11 +44,7 @@ function setup() {
 function draw() {
   background(255);
 
-push()
-textAlign(LEFT);
-textSize(50)
-text("Want another idea? Click anywhere", 100,200)
-pop()
+
 
   starterRand = random(starter);
   discussRand = random(discuss);
@@ -78,7 +74,11 @@ pop()
     text("thinking...", width/2, height/4+200);
   }
   
-
+push()
+textAlign(LEFT);
+textSize(20)
+text("Want another idea? Click anywhere", 100,200)
+pop()
 //   console.log(typeof newtech)
 //   console.log(newtech, artForm,subject)
 }
